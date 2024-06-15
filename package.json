@@ -1,5 +1,5 @@
 {
-  "name": "growley-git/pattern-lab",
+  "name": "growley-pattern-lab",
   "workspaces": {
     "packages": [
       "packages/*"
