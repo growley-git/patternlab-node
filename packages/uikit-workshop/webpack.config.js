@@ -9,11 +9,12 @@ const argv = require('yargs').argv;
 const { merge } = require('webpack-merge');
 const WebpackBar = require('webpackbar');
 const fs = require('node:fs');
+const globImporter = require('node-sass-glob-importer');
 
 const cosmiconfigSync = require('cosmiconfig').cosmiconfigSync;
 const explorerSync = cosmiconfigSync('patternlab');
 
-// @todo: wire these two ocnfigs up to use cosmicconfig!
+// @todo: wire these two configs up to use cosmicconfig!
 const defaultConfig = {
   rootDir: process.cwd(),
   buildDir: './dist',
@@ -143,6 +144,7 @@ module.exports = function (apiConfig) {
           sassOptions: {
             sourceMap: config.sourceMaps,
             outputStyle: 'expanded',
+            importer: globImporter()
           },
         },
       },

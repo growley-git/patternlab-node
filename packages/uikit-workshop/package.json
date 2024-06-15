@@ -70,6 +70,7 @@
     "lit-html": "^1.1.2",
     "mini-css-extract-plugin": "^2.7.2",
     "mousetrap": "^1.6.5",
+    "node-sass-glob-importer": "^5.3.3",
     "portfinder": "^1.0.28",
     "postcss": "^8.2.8",
     "postcss-loader": "^7.0.2",
